@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import vk, time
 
 
@@ -7,14 +7,13 @@ import vk, time
 s = ""
 session = vk.Session(access_token="b7690ac26382a9b074c4eb953e39a9ef0fb42c0e441df4813046ce1fbbae4d209b55f0af0f895844e8a6d")
 api = vk.API(session)
-for i in range (1,len(api.users.getNearby(latitude = 55, longitude  = 36, radius = 4))):
+'''for i in range (1,len(api.users.getNearby(latitude = 55, longitude  = 36, radius = 4))):
+    print()
     s+=api.users.getNearby(accuracy = 5, latitude = 55, longitude  = 36, radius = 4)[i]['first_name'] + " "
-    time.sleep(0.25)
+    time.sleep(0.35)
     s+=api.users.getNearby(accuracy = 5, latitude = 55, longitude  = 36, radius = 4)[i]['last_name']
-    time.sleep(0.25)
+    time.sleep(0.35)
     s+="\n"
 
-api.wall.post(owner_id = 244728879 ,friends_only = 0, message = "Относительно рядом со мной \n " + s, v='5.35')
-=======
-print("lol")
->>>>>>> 66a9ce8847bb446e9c8c60bca7bf5fdc2fc067c3
+api.wall.post(owner_id = 244728879 ,friends_only = 0, message = "Относительно рядом со мной \n " + s, v='5.35')'''
+print(api.photos.getAlbums(owner_ids = 244728879, v='5.52'))
