@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import vk, time
 
 
@@ -14,3 +15,6 @@ for i in range (1,len(api.users.getNearby(latitude = 55, longitude  = 36, radius
     s+="\n"
 
 api.wall.post(owner_id = 244728879 ,friends_only = 0, message = "Относительно рядом со мной \n " + s, v='5.35')
+=======
+print("lol")
+>>>>>>> 66a9ce8847bb446e9c8c60bca7bf5fdc2fc067c3
