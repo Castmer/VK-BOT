@@ -47,7 +47,9 @@ print(attL)
 sL = s.split("\n")
 print(sL)
 
-for i in range (7):
+b = 10 - (len(sL) % 10)
+
+for i in range ((len(sL)+b)//10):
     api.wall.post(owner_id = 244728879 ,friends_only = 0, message = sL[0:10], v='5.35', attachments = attL[0:10])
     sL = sL[10:]
     attL = attL[10:]
